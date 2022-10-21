@@ -1,0 +1,184 @@
+body {
+  padding: 10px 30px;
+  background-color: rgb(224, 224, 224);
+  font-family: "Poppins";
+}
+.wrapper {
+  display: flex;
+
+  background-color: rgb(96, 170, 224);
+  border-radius: 20px;
+}
+
+.person {
+  display: flex;
+
+  flex-direction: column;
+  /* justify-content: center; */
+  background-color: rgb(96, 170, 224);
+  padding: 10px;
+  border-radius: 20px;
+  width: 30%;
+  color: white;
+}
+
+.personSkils {
+  background-color: rgb(255, 255, 255);
+  padding: 50px;
+  border-radius: 20px;
+  width: 100%;
+}
+
+img {
+  display: block;
+  margin: 50px auto 0 auto;
+  object-fit: cover;
+  border-radius: 50%;
+  height: 130px;
+  width: 130px;
+  border-style: solid;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  margin: 0;
+}
+
+h4 {
+  text-align: center;
+  font-weight: 100;
+  margin: 0;
+}
+
+#copyright {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+#copyright2 {
+  display: none;
+  justify-content: center;
+}
+
+p {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 100;
+  margin: 0;
+}
+
+h6 {
+  margin: 0px;
+  font-size: 12px;
+}
+
+.experienceInfo {
+  padding: 10px 0 0 50px;
+  display: flex;
+  gap: 10px;
+}
+
+.leftPart {
+  text-align: end;
+}
+
+.leftPart h6:nth-of-type(2) {
+  color: darkgray;
+}
+
+.dynamicExperience p {
+  text-align: left;
+}
+
+.dynamicSkills p {
+  text-align: left;
+}
+
+.textInfo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.textInfoLeft {
+  font-size: 10px;
+  font-weight: bolder;
+}
+
+.textInfoRight {
+  font-size: 10px;
+  font-weight: bolder;
+  color: darkgrey;
+}
+
+span {
+  color: rgb(0, 188, 188);
+}
+
+.progressFull {
+  display: flex;
+  align-items: center;
+  padding: 3px;
+  height: 5px;
+  border: 1px solid rgb(0, 188, 188);
+  border-radius: 50px;
+}
+
+.progressActual {
+  padding: 0;
+  background: rgb(0, 188, 188);
+  height: 5px;
+
+  border-radius: 50px;
+}
+
+@media only screen and (max-width: 1024px) {
+  body {
+    padding: 0;
+  }
+  .wrapper {
+    display: block;
+    width: 100%;
+    background-color: rgb(96, 170, 224);
+    border-radius: 20px;
+  }
+
+  .person {
+    padding: 0;
+    width: 100%;
+  }
+
+  .personSkils {
+    padding: 0px;
+    width: 100%;
+  }
+
+  .experience {
+    padding: 20px;
+  }
+
+  .skills {
+    padding: 20px;
+  }
+  #copyright {
+    height: 100%;
+    display: none;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  #copyright2 {
+    display: block;
+    color: white;
+    justify-content: center;
+  }
+  .experienceInfo {
+    display: block;
+    padding: 0;
+  }
+  .leftPart {
+    text-align: center;
+  }
+}
